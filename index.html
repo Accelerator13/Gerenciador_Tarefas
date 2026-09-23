@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tarefas</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Tarefas</h1>
+    <button class="tema" id="btnTema" aria-label="Alternar tema">◐</button>
+  </header>
+  <p id="resumo"></p>
+  <div class="barra" role="progressbar" aria-label="Progresso"><i id="prog"></i></div>
+
+  <div class="novo">
+    <input type="text" id="nome" placeholder="Nova tarefa" maxlength="120" autocomplete="off" aria-label="Nome da tarefa">
+    <select id="prio" aria-label="Prioridade">
+      <option value="baixa">Baixa</option><option value="media" selected>Média</option><option value="alta">Alta</option>
+    </select>
+    <button class="add" id="btnAdd">Adicionar</button>
+  </div>
+
+  <div class="filtros" id="filtros">
+    <button data-f="todas" aria-pressed="true">Todas</button>
+    <button data-f="pendentes" aria-pressed="false">Pendentes</button>
+    <button data-f="concluidas" aria-pressed="false">Concluídas</button>
+  </div>
+
+  <ul id="lista"></ul>
+  <div class="rodape"><button class="limpar" id="btnLimpar">Limpar concluídas</button></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
