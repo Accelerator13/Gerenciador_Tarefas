@@ -10,5 +10,7 @@ App web simples para organizar tarefas, feito com HTML, CSS e JavaScript puro.
 - Tema claro e escuro
 - Tarefas salvas no navegador (`localStorage`)
 
+- Instalável como app (PWA) e funciona offline
+
 ## Como rodar
 Abra o `index.html` no navegador.

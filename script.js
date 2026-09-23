@@ -77,3 +77,7 @@ $("btnTema").onclick = () => {
   r.dataset.theme = escuro ? "light" : "dark";
 };
 render();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
